@@ -1,0 +1,44 @@
+p {
+    font-size: 1.4em;
+    margin: 0;
+}
+
+.forecast-day {
+    width: 100%;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+    .forecast-day:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+.day,
+.description,
+.temp {
+    width: 33.332%;
+    text-transform: capitalize;
+    float: left;
+}
+
+.description-icon {
+    width: 26px;
+    float: left;
+    margin: 2px 20px 0 0;
+}
+
+.temp {
+    text-align: right;
+}
+
+    .temp-max,
+    .temp-min {
+        padding-left: 20px;
+    }
+
+        .temp-min {
+            color: #80CBC4;
+        }
