@@ -1,5 +1,5 @@
 p {
-    font-size: 1.4em;
+    font-size: 1.2em;
     margin: 0;
 }
 
@@ -14,6 +14,10 @@ p {
         content: "";
         display: table;
         clear: both;
+    }
+
+    .forecast-day:last-child {
+        border-bottom: none;
     }
 
 .day,
@@ -39,6 +43,53 @@ p {
         padding-left: 20px;
     }
 
+        .temp-max .fa,
+        .temp-min .fa {
+            font-size: 0.6em;
+            vertical-align: top;
+            margin: 9px 5px 0 0;
+        }
+
         .temp-min {
             color: #80CBC4;
+            opacity: 0.8;
         }
+
+@media screen and (max-width: 600px) {
+
+    p {
+        font-size: 1em;
+    }
+
+    .day {
+        width: 75px;
+    }
+
+    .description {
+        width: calc(100% - 33.332% - 75px);
+    }
+
+    .temp {
+        float: right;
+    }
+
+    .description-icon {
+        width: 20px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .description p {
+        display: none;
+    }
+
+    .temp-max .fa,
+    .temp-min .fa {
+        font-size: 0.8em;
+        vertical-align: top;
+        margin: 6px 5px 0 0;
+    }
+
+}
